@@ -1,2 +1,2 @@
-# bingo
-jogo desenvolvido, para fins de avaliação pessoal
+# Bingo
+Jogo desenvolvido, para fins de avaliação pessoal
