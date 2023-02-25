@@ -1,5 +1,7 @@
 import random
 random.seed()
+
+
 linha = []*5
 matriz1 = [linha]*5
 tot = []
@@ -18,18 +20,20 @@ for l in range(5):
         matriz1[l] = linha
 print('****************'*4)
 print('****************'*4)
-nome = input('qual o nome do jogador numero 1?')
+nome1 = input('qual o nome do jogador numero 1?')
 print('****************'*4)
-while nome.isalpha() == False:
+while nome1.isalpha() == False:
   print("----------nome não pode ter numeros nem caracteres especiais:----------\n ")
   print('****************'*4)
-  nome = input('escreva um nome valido: ')
+  nome1 = input('escreva um nome valido: ')
 print('****************'*4)
 print(' matriz tabular\n')
-print('cartela do(a) {}\n'.format(nome))
+print('cartela do(a) {}\n'.format(nome1))
 for lec in range(len(linha)):
     cart_1 = print(matriz1[lec])
 print('****************'*4)
+
+
 linha2 = []*5
 matriz = [linha2]*5
 tot = []
@@ -44,15 +48,15 @@ for l in range(5):
         jogador2.append(num_aleatorio)
         matriz[l] = linha2
 print('****************'*4)
-nome2 = input('qual o nome do jogador numero 2?')
+nome = input('qual o nome do jogador numero 2?')
 print('****************'*4)
-while nome2.isalpha() == False:
+while nome.isalpha() == False:
   print("----------nome não pode ter numeros nem caracteres especiais:----------\n ")
   print('****************'*4)
-  nome2 = input('escreva um nome valido: ')
+  nome = input('escreva um nome valido: ')
 print('****************'*4)
 print(' matriz tabular\n')
-print('cartela do(a) {}\n'.format(nome2))
+print('cartela do(a) {}\n'.format(nome))
 for lec in range(len(linha2)):
     cart_2 = print(matriz[lec])
 print('****************'*4)
@@ -60,6 +64,8 @@ print('****************'*4)
 tot = []
 for i in range(10,61,1):
     tot.append(i)
+    
+
 op = ''
 while op == '':
     op = input('deseja sortear um numero digite (enter): ')
@@ -74,32 +80,34 @@ while op == '':
             for ii in range(len(matriz)):
                 if matriz1[i][ii] == num_aleatorio:
                     matriz1[i][ii] = ''
-                    print('-------------------{} marcou ponto-------------------'.format(nome))
+                    print('-------------------{} marcou ponto-------------------'.format(nome1))
                 if matriz[i][ii] == num_aleatorio:
                     matriz[i][ii] = ''
-                    print('-------------------{} marcou ponto-------------------'.format(nome2))
+                    print('-------------------{} marcou ponto-------------------'.format(nome))
         print('****************'*4)
         print('\n                   o número sorteado foi {}          \n'.format(num_aleatorio))
         print('****************'*4)
         print('                              BINGO')
-        print('cartela do(a) {} =>)\n'.format(nome))
+        print('cartela do(a) {} =>)\n'.format(nome1))
         for lec in range(len(linha)):
             print(f"                      {matriz1[lec]}")
         print('****************'*4)
         print('\n                   o número sorteado foi {}          \n'.format(num_aleatorio))
         print('****************'*4)
         print('                              BINGO')
-        print('cartela do(a) {} =>\n'.format(nome2))      
+        print('cartela do(a) {} =>\n'.format(nome))      
         for lec in range(len(linha2)):
             print(f"                      {matriz[lec]}")
-        print('****************'*4)                                       
+        print('****************'*4)    
+          
+                                                       
         if matriz1 == [['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','','']] and matriz == [['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','','']]:
             print('houve um empate')
             op = 'n'
         elif matriz1 == [['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','','']]:
-            print('{} ganhou'.format(nome))
+            print('{} ganhou'.format(nome1))
             op = 'n'
         elif matriz == [['','','','',''],['','','','',''],['','','','',''],['','','','',''],['','','','','']]:
-            print('{} ganhou'.format(nome2))
+            print('{} ganhou'.format(nome))
             op = 'n'
         tot.remove(num_aleatorio)
