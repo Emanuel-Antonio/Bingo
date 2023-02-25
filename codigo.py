@@ -21,10 +21,10 @@ while continuar == "c":
             matriz1[l] = linha
     print('****************'*4)
     print('****************'*4)
-    nome1 = input('Qual o nome do jogador numero 1? ')
+    nome1 = input('Qual o nome do jogador número 1? ')
     print('****************'*4)
     while nome1.isalpha() == False:
-        print("----------Nome não pode ter numeros nem caracteres especiais:----------\n ")
+        print("----------Nome não pode ter números nem caracteres especiais:----------\n ")
         print('****************'*4)
         nome1 = input('Escreva um nome valido: ')
     print('****************'*4)
@@ -49,10 +49,10 @@ while continuar == "c":
             jogador2.append(num_aleatorio)
             matriz2[l] = linha2
     print('****************'*4)
-    nome2 = input('Qual o nome do jogador numero 2? ')
+    nome2 = input('Qual o nome do jogador número 2? ')
     print('****************'*4)
     while nome2.isalpha() == False:
-        print("----------Nome não pode ter numeros nem caracteres especiais:----------\n ")
+        print("----------Nome não pode ter números nem caracteres especiais:----------\n ")
         print('****************'*4)
         nome2 = input('Escreva um nome valido: ')
     print('****************'*4)
@@ -69,11 +69,11 @@ while continuar == "c":
 
     op = ''
     while op == '':
-        op = input('Deseja sortear um numero digite (enter): ')
+        op = input('Deseja sortear um número digite (enter): ')
         print('****************'*4)
         print('****************'*4)
         while op != '':
-            op = input('Deseja sortear um numero digite (enter): ')
+            op = input('Deseja sortear um número digite (enter): ')
             print('****************'*4) 
         if op == '':
             num_aleatorio = random.choice(matriz_para_selecao_numeros)
