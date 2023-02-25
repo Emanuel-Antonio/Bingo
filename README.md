@@ -1,4 +1,4 @@
 # Bingo
-Jogo desenvolvido para fins de avaliação pessoal
+Game developed for personal evaluation purposes
 
-Observação: Jogabilidade para 2 jogadores!
+Note: 2 player gameplay!
