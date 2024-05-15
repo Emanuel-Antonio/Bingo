@@ -1,6 +1,7 @@
 import random
 random.seed()
 
+
 continuar = "c"
 while continuar == "c":
     linha = []*5
